@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!-- To change this month’s news, edit updates.js -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Needs &amp; Offerings — a community practice</title>
+    <meta
+      name="description"
+      content="Needs &amp; Offerings is a monthly gathering at Rock Point: fire, songs, a meal, and a practice of sharing what we need and what we can offer."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="backdrop" aria-hidden="true">
+      <svg class="doodle doodle-houses-top" viewBox="0 0 420 70" fill="none">
+        <g stroke="#6b4423" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 58 V28 L28 12 L48 28 V58" />
+          <path d="M58 58 V32 L74 18 L90 32 V58" />
+          <path d="M102 60 V26 L128 8 L154 26 V60" />
+          <path d="M168 58 V34 L182 22 L196 34 V58" />
+          <path d="M210 60 V24 L238 6 L266 24 V60" />
+          <path d="M280 58 V36 L292 24 L304 36 V58" />
+          <path d="M318 60 V28 L340 10 L362 28 V60" />
+          <path d="M376 58 V38 L388 26 L400 38 V58" />
+        </g>
+      </svg>
+      <svg class="doodle doodle-scribble-a" viewBox="0 0 280 90" fill="none">
+        <path
+          d="M8 48 C 40 8, 70 82, 110 30 S 180 4, 210 50 S 250 88, 272 36"
+          stroke="#3d8c3a"
+          stroke-width="6"
+          stroke-linecap="round"
+        />
+        <path
+          d="M18 22 C 80 70, 140 6, 200 58"
+          stroke="#d62c1a"
+          stroke-width="4"
+          stroke-linecap="round"
+          opacity="0.85"
+        />
+      </svg>
+      <svg class="doodle doodle-blob" viewBox="0 0 160 90">
+        <ellipse cx="80" cy="46" rx="62" ry="28" fill="#6b46c1" opacity="0.22" />
+        <ellipse cx="96" cy="40" rx="40" ry="18" fill="#2b4fd6" opacity="0.18" />
+      </svg>
+      <svg class="doodle doodle-sun" viewBox="0 0 160 160">
+        <circle cx="80" cy="80" r="38" fill="#f2d03a" />
+        <circle cx="86" cy="74" r="38" fill="#f7e06a" opacity="0.45" />
+        <g stroke="#f2d03a" stroke-width="6" stroke-linecap="round">
+          <path d="M80 12 v18" />
+          <path d="M80 130 v18" />
+          <path d="M12 80 h18" />
+          <path d="M130 80 h18" />
+          <path d="M28 28 l14 14" />
+          <path d="M118 118 l14 14" />
+          <path d="M132 28 l-14 14" />
+          <path d="M28 132 l14 -14" />
+        </g>
+      </svg>
+      <svg class="doodle doodle-houses-bottom" viewBox="0 0 280 60" fill="none">
+        <g stroke="#6b4423" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 52 V30 L26 16 L42 30 V52" />
+          <path d="M56 52 V28 L78 10 L100 28 V52" />
+          <path d="M114 52 V34 L126 22 L138 34 V52" />
+          <path d="M154 52 V26 L176 8 L198 26 V52" />
+          <path d="M214 52 V32 L228 20 L242 32 V52" />
+        </g>
+      </svg>
+      <svg class="doodle doodle-scribble-b" viewBox="0 0 220 70" fill="none">
+        <path
+          d="M6 40 C 50 8, 90 64, 140 22 S 200 8, 214 48"
+          stroke="#f2d03a"
+          stroke-width="7"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="On this page">
+        <a class="nav-chip tilt-n2" href="#what">What</a>
+        <a class="nav-chip tilt-p1" href="#when">When</a>
+        <a class="nav-chip tilt-n1" href="#who">Who</a>
+        <a class="nav-chip tilt-p2" href="#practice">Practice</a>
+        <a class="nav-chip tilt-n2" href="#access">Access</a>
+        <a class="nav-chip tilt-p1" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div
+        id="updates"
+        class="updates"
+        hidden
+        role="region"
+        aria-label="This month’s updates"
+      ></div>
+
+      <section class="hero">
+        <div class="hero-titles">
+          <h1 class="logo">
+            <span class="logo-needs scrap scrap--red">Needs</span>
+            <span class="logo-amp scrap">&amp;</span>
+            <span class="logo-offerings scrap">Offerings</span>
+          </h1>
+          <p class="banner scrap tilt-n2">
+            Community practice for permanent organization
+          </p>
+        </div>
+
+        <figure class="flyer-wrap scrap tilt-p1">
+          <picture>
+            <source type="image/webp" srcset="img/flyer.webp" />
+            <img
+              src="img/flyer.jpg"
+              width="605"
+              height="768"
+              alt="Hand-drawn collage flyer for Needs and Offerings: first Sundays, 4:30 to 6:30pm, at the fire pit behind the chapel at 20 Rock Point Road. Dinner, relational skill-building, mutual aid, and songs. Kids welcome; childcare offered."
+            />
+          </picture>
+        </figure>
+
+        <p class="intro scrap scrap--taped tilt-n1">
+          Hey! Thanks for your interest in attending Needs &amp; Offerings, a
+          monthly gathering at Rock Point hosted by Maris, Lena, and nico.
+        </p>
+      </section>
+
+      <section id="what" class="block">
+        <article class="scrap scrap--taped tilt-p1">
+          <h2>What’s Needs &amp; Offerings?</h2>
+          <p>
+            Needs &amp; Offerings is a community practice towards permanent
+            organization. We start with fire and singing; we talk about “what
+            time it is on the clock of the world” and what it means to live in
+            these times. We share a meal, and work together to learn skills that
+            equip us to be organized, all the time, in service of life and
+            community. We conclude each gathering with a ‘needs and offerings
+            practice,’ in which we ask folks to share needs or offerings, and
+            take time to make those connections.
+          </p>
+        </article>
+      </section>
+
+      <section id="when" class="block when">
+        <div class="when-chips">
+          <p class="scrap scrap--red-fill tilt-n2">
+            4:30 – 6:30pm<br />
+            First Sundays<br />
+            Every month
+          </p>
+          <p class="scrap tilt-p2">
+            At the fire pit behind the chapel<br />
+            @ 20 Rock Point Road
+          </p>
+        </div>
+        <article class="scrap tilt-n1">
+          <h2>Where and when is it?</h2>
+          <p>
+            20 Rock Point Road, every first Sunday of the month from 4:30 –
+            6:30pm, although we often run a little over.
+          </p>
+          <p>
+            Head over the bridge that crosses the bike path, stay right, and go
+            to the end of the road. You can park in the big parking lot. We
+            begin at the fire pit, which is behind the chapel (the building on
+            the left). We’ll eat in the building on the right.
+          </p>
+        </article>
+      </section>
+
+      <section id="who" class="block">
+        <h2 class="scrap scrap--heading tilt-p1">
+          Should I come to Needs &amp; Offerings?
+        </h2>
+        <p class="lede scrap tilt-n1">
+          You might enjoy this community practice if you…
+        </p>
+        <ul class="notes">
+          <li class="scrap note tilt-p2">
+            believe in: joy, compassion, helping one another, &amp; our shared
+            humanity
+          </li>
+          <li class="scrap note tilt-n2">
+            are looking for friends and comrades to walk alongside in these
+            complex times
+          </li>
+          <li class="scrap note tilt-p1">
+            want to practice preparing for the escalating troubles of this
+            moment, conceptually, emotionally, physically
+          </li>
+          <li class="scrap note tilt-n1">
+            believe that relationships are one of the most important tools we
+            have for resilience
+          </li>
+        </ul>
+      </section>
+
+      <section id="practice" class="block">
+        <div class="starburst-wrap">
+          <svg class="starburst" viewBox="0 0 200 200" aria-hidden="true">
+            <polygon
+              fill="#f2d03a"
+              points="100,4 112,38 138,12 128,46 168,30 142,58 186,58 148,76 196,90 148,98 178,128 132,112 148,156 116,122 112,168 100,126 88,168 84,122 52,156 68,112 22,128 52,98 4,90 52,76 14,58 58,58 32,30 72,46 62,12 88,38"
+            />
+          </svg>
+          <article class="scrap scrap--starburst tilt-n1">
+            <h2>What do we practice?</h2>
+            <p class="expect">
+              Dinner · relational skill-building · mutual aid · songs
+            </p>
+            <ul>
+              <li>
+                Creating a non-tech based communications system by meeting the
+                same time and place every month, and sharing information verbally
+              </li>
+              <li>
+                Navigating challenges in organizing and community, from conflict
+                to confusion about how to get involved
+              </li>
+              <li>
+                Deepening listening skills and ability to collaborate across
+                difference
+              </li>
+              <li>Building a web of connections beyond our inner circle</li>
+              <li>
+                Intertwining reverence for our beautiful planet with struggles
+                for a more just world
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="different" class="block">
+        <article class="scrap scrap--taped tilt-p2">
+          <h2>How is Needs &amp; Offerings different from other kinds of organizing?</h2>
+          <p class="pull">This is a gathering, not a meeting.</p>
+          <p>
+            We do activities and connect with each other, but there is no agenda
+            or notes document. We are not oriented around a specific campaign or
+            goal, beyond our broad vision for permanently organized community.
+            You can come just once, but it’s delightful to build community over
+            time! You are welcome to show up as you are, even if you aren’t
+            feeling extroverted or wanting to participate a ton. We always sing
+            and we always eat. We are here to be people on the earth, not
+            militant robots forging towards a predetermined objective.
+          </p>
+        </article>
+      </section>
+
+      <section id="access" class="block access">
+        <h2 class="scrap scrap--heading tilt-n2">Access information</h2>
+        <ul class="access-list">
+          <li class="scrap tilt-p1">
+            <strong>1st hour:</strong> outside around the fire. Terrain has
+            minimal incline but is rough (roots, sticks, mud, ice, etc). Backless
+            benches and logs available to sit on. No additional lighting in
+            winter.
+          </li>
+          <li class="scrap tilt-n1">
+            <strong>2nd hour:</strong> at the school cafeteria, outside when
+            weather permits. ADA accessible.
+          </li>
+          <li class="scrap tilt-p2">Masks welcome, not required.</li>
+          <li class="scrap tilt-n2">
+            Optional childcare provided in a room adjacent to where we meet.
+          </li>
+          <li class="scrap tilt-p1">
+            Dinner provided, generally vegetarian and meat options; cross
+            contamination of allergens likely.
+          </li>
+          <li class="scrap tilt-n1">
+            We encourage you to bring what you need (headlamps, snow boots,
+            foldable chairs, warm clothes)!
+          </li>
+        </ul>
+        <p class="kid-chips">
+          <span class="scrap scrap--red-fill tilt-p2">Kids welcome</span>
+          <span class="scrap tilt-n2">Childcare offered</span>
+        </p>
+      </section>
+
+      <section id="contact" class="block">
+        <article class="scrap scrap--taped tilt-p1">
+          <h2>How do I get in touch, or join the listserv?</h2>
+          <p>
+            We only add folks who have attended Needs &amp; Offerings to our
+            listserv, so our online community reflects the one we are building
+            in person.
+          </p>
+          <p>
+            You can reach out with questions at
+            <a id="contact-email" href="mailto:needsandofferings@proton.me">needsandofferings@proton.me</a>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="scrap tilt-n1">
+        20 Rock Point Road · first Sundays
+      </p>
+    </footer>
+
+    <script src="updates.js"></script>
+    <script>
+      (function () {
+        var STORAGE_KEY = "nao-dismissed-updates";
+        var stack = document.getElementById("updates");
+        var paletteSize = 5;
+
+        function getDismissed() {
+          try {
+            var raw = sessionStorage.getItem(STORAGE_KEY);
+            return raw ? JSON.parse(raw) : [];
+          } catch (err) {
+            return [];
+          }
+        }
+
+        function dismiss(text) {
+          var list = getDismissed();
+          if (list.indexOf(text) === -1) {
+            list.push(text);
+            try {
+              sessionStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+            } catch (err) {
+              /* private mode / quota — dismiss still works for this render */
+            }
+          }
+        }
+
+        function parseUpdates(text) {
+          if (!text) return [];
+          return text
+            .split("\n")
+            .map(function (line) {
+              return line.trim();
+            })
+            .filter(Boolean);
+        }
+
+        function remainingNotes() {
+          var dismissed = getDismissed();
+          var all = parseUpdates(
+            typeof updatesText === "string" ? updatesText : ""
+          );
+          return all
+            .map(function (text, colorIndex) {
+              return { text: text, colorIndex: colorIndex };
+            })
+            .filter(function (note) {
+              return dismissed.indexOf(note.text) === -1;
+            });
+        }
+
+        function render() {
+          var notes = remainingNotes();
+          stack.innerHTML = "";
+
+          if (!notes.length) {
+            stack.hidden = true;
+            return;
+          }
+
+          stack.hidden = false;
+
+          var label = document.createElement("p");
+          label.className = "updates-label";
+          label.textContent = "This month";
+          stack.appendChild(label);
+
+          var pile = document.createElement("div");
+          pile.className = "updates-pile";
+          stack.appendChild(pile);
+
+          notes.forEach(function (note, i) {
+            var text = note.text;
+            var isTop = i === 0;
+            var sign = i % 2 === 0 ? -1 : 1;
+            var btn = document.createElement("button");
+            btn.type = "button";
+            btn.className =
+              "postit postit--" +
+              (note.colorIndex % paletteSize) +
+              (isTop ? " postit--top" : "");
+            btn.style.setProperty("--ox", sign * Math.min(i, 4) * 14 + "px");
+            btn.style.setProperty("--oy", Math.min(i, 4) * 12 + "px");
+            btn.style.setProperty("--rot", sign * (2 + i * 1.4) + "deg");
+            btn.style.zIndex = String(notes.length - i);
+
+            var body = document.createElement("span");
+            body.className = "postit-text";
+            body.textContent = text;
+            btn.appendChild(body);
+
+            if (isTop) {
+              var hint = document.createElement("span");
+              hint.className = "postit-hint";
+              hint.textContent = "click to dismiss";
+              btn.appendChild(hint);
+              btn.setAttribute(
+                "aria-label",
+                "This month’s update: " + text + ". Click to dismiss."
+              );
+              btn.addEventListener("click", function () {
+                dismiss(text);
+                render();
+                var next = stack.querySelector(".postit--top");
+                if (next) next.focus();
+              });
+            } else {
+              btn.tabIndex = -1;
+              btn.setAttribute("aria-hidden", "true");
+            }
+
+            pile.appendChild(btn);
+          });
+        }
+
+        render();
+      })();
+    </script>
+  </body>
+</html>
