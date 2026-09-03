@@ -288,30 +288,9 @@
     <script src="updates.js"></script>
     <script>
       (function () {
-        var STORAGE_KEY = "nao-dismissed-updates";
         var stack = document.getElementById("updates");
         var paletteSize = 5;
-
-        function getDismissed() {
-          try {
-            var raw = sessionStorage.getItem(STORAGE_KEY);
-            return raw ? JSON.parse(raw) : [];
-          } catch (err) {
-            return [];
-          }
-        }
-
-        function dismiss(text) {
-          var list = getDismissed();
-          if (list.indexOf(text) === -1) {
-            list.push(text);
-            try {
-              sessionStorage.setItem(STORAGE_KEY, JSON.stringify(list));
-            } catch (err) {
-              /* private mode / quota — dismiss still works for this render */
-            }
-          }
-        }
+        var dismissed = [];
 
         function parseUpdates(text) {
           if (!text) return [];
@@ -324,7 +303,6 @@
         }
 
         function remainingNotes() {
-          var dismissed = getDismissed();
           var all = parseUpdates(
             typeof updatesText === "string" ? updatesText : ""
           );
@@ -387,7 +365,7 @@
                 "This month’s update: " + text + ". Click to dismiss."
               );
               btn.addEventListener("click", function () {
-                dismiss(text);
+                dismissed.push(text);
                 render();
                 var next = stack.querySelector(".postit--top");
                 if (next) next.focus();

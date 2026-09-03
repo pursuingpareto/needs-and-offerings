@@ -266,9 +266,14 @@ main {
 }
 
 .updates {
-  width: min(22rem, calc(100% - 0.5rem));
-  margin: 1.35rem auto 0.25rem;
+  position: absolute;
+  top: 0.35rem;
+  right: 0;
+  z-index: 8;
+  width: min(20rem, calc(100% - 1rem));
+  margin: 0;
   text-align: center;
+  pointer-events: none;
 }
 
 .updates[hidden] {
@@ -287,6 +292,7 @@ main {
   position: relative;
   min-height: 8.6rem;
   padding: 0.4rem 0.85rem 1.15rem;
+  pointer-events: auto;
 }
 
 .postit {
@@ -306,8 +312,8 @@ main {
   text-align: left;
   appearance: none;
   box-shadow:
-    2px 3px 0 rgba(28, 22, 18, 0.08),
-    0 8px 18px rgba(28, 22, 18, 0.16);
+    2px 3px 0 rgba(28, 22, 18, 0.1),
+    0 12px 28px rgba(28, 22, 18, 0.22);
   transform: rotate(var(--rot, 0deg)) translate(var(--ox, 0px), var(--oy, 0px));
 }
 
@@ -611,6 +617,12 @@ main {
   .starburst-wrap {
     padding: 1.2rem 0;
   }
+
+  .updates {
+    top: 0.15rem;
+    right: 0.1rem;
+    width: min(16.5rem, calc(100% - 2.25rem));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -645,6 +657,13 @@ main {
   .skip-link,
   .starburst {
     display: none;
+  }
+
+  .updates {
+    position: static;
+    width: auto;
+    margin: 1rem 0;
+    pointer-events: auto;
   }
 
   body {
