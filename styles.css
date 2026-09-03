@@ -475,6 +475,7 @@ main {
   position: relative;
   isolation: isolate;
   padding: 2.4rem 0.4rem;
+  z-index: -1;
 }
 
 .starburst {
